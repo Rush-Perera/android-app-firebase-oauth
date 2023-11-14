@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                         IntentSenderRequest intentSenderRequest = new IntentSenderRequest
                                 .Builder(beginSignInResult.getPendingIntent()).build();
                         signInLauncher.launch(intentSenderRequest);
+
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
